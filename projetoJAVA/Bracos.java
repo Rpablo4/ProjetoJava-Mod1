@@ -10,8 +10,9 @@ public class Bracos extends AgrupamentoMuscular {
 	@Override
 	public void exercicio(String exercicio) {
 		System.out.println("Lista de exercícios para "+exercicio+":"
-				+ "\n Rosca"
-				+ "\n Mergulho no banco");
+				+ "\n- Rosca"
+				+ "\n- Mergulho no banco"
+				+ "\n- Flexão");
 	}
 	
 	@Override

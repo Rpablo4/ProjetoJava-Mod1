@@ -16,12 +16,17 @@ public class Teste {
 
 		Scanner input = new Scanner(System.in);
 
-		int opMenu, x, opSelecionada, opMenuPrincipal;
+		int opMenu, opSelecionada, opMenuPrincipal;
+		
+		// Insira sua parte aqui jão
+		
+		
+		
 
 		do {
 
 			System.out.println("\t\t-Menu Principal-" + "\n\n1 - Suas metas" + "\n2 - Tipos de treino" + "\n3 - Dicas"
-					+ "\n4 - Manual do app" + "\n5 - Sobre nós" + "\n\nDigite o número da opção desejada: ");
+					+ "\n4 - Manual do app" + "\n5 - Sobre nós"+"\n0 - Sair" + "\n\nDigite o número da opção desejada: ");
 
 			opMenuPrincipal = input.nextInt();
 
@@ -29,10 +34,14 @@ public class Teste {
 
 			switch (opMenuPrincipal) {
 			case 0:
+				
 				System.out.println("Saindo...");
+				
 				break;
 
 			case 1: // Metas
+				// Peso atual, meta de peso, mensagem motivacional, IMC puxado da parte do joao paz
+				//
 
 				break;
 
@@ -71,7 +80,8 @@ public class Teste {
 								espaco.PulaLinhas();
 								bracos.exercicio("BRAÇOS");
 								bracos.quantidade(3, 10);
-								bracos.tempo(10);
+								bracos.tempo(5);
+								
 								Thread.sleep(2000);
 								break;
 
@@ -120,12 +130,19 @@ public class Teste {
 
 			case 3: // Dicas
 				
+				// Link de video
+				
 				break;
 
 			case 4: // Manual do app
+				
+				// String explicando o que tem em cada parte do app
+				
 				break;
 
 			case 5: // Sobre nós
+				
+				// Info dos DEVS (GITHUB, Linkedin, nome, idade, cidade)
 				break;
 
 			default:
