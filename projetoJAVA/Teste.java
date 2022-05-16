@@ -15,11 +15,11 @@ public class Teste {
 		Dicas dicas = new Dicas();
 
 		Scanner input = new Scanner(System.in);
-
+		Apresentacao apresentacao = new Apresentacao(); 
 		int opMenu, opSelecionada, opMenuPrincipal;
 		
-		// Insira sua parte aqui jão
-		
+		//joao paz...
+		apresentacao.Apresentacao();
 		
 		
 
