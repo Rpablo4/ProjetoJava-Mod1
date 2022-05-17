@@ -32,7 +32,7 @@ public class Usuarios {
 		System.out.println("\n peso: "+getPeso()+"kg;");
 		System.out.println("\n Meta: "+getMeta()+"kg;");
 		System.out.println("\n Imc: "+getImc()+";");
-
+		
 			
 		
 	}

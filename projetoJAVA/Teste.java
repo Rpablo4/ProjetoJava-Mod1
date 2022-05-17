@@ -54,11 +54,11 @@ public class Teste {
 		
 		//Primeiros dado
 	
-		System.out.print("Carregando. ");
+		System.out.print("Carregando.");
 		Thread.sleep(1000);
-		System.out.print(". ");
+		System.out.print(".");
 		Thread.sleep(1000);
-		System.out.print(". ");
+		System.out.print(".");
 		Thread.sleep(1000);
 		System.out.println("\nCarregamento completo!!!\n");
 		Thread.sleep(2000);
@@ -93,9 +93,6 @@ public class Teste {
 		System.out.println("\nSeu Peso: ");
 		peso = input.nextFloat();
 		perfil.setPeso(peso);
-		System.out.println("\nQual a sua meta em Kg: ");
-		meta = input.nextFloat();
-		perfil.setMeta(meta);
 		System.out.print("Calculando seu IMC...\n");
 		Thread.sleep(1000);
 		System.out.print("Carregando.");
@@ -123,7 +120,7 @@ public class Teste {
 		switch(op) {
 		
 		case 1:
-			 System.out.println("\nQual peso(kg) você deseja alcansar: ");
+			 System.out.println("\nQual peso(kg) você deseja alcançar: ");
 			 meta = input.nextInt();
 			 perfil.setMeta(meta);	 
 		break;	
@@ -132,8 +129,11 @@ public class Teste {
 			 meta = input.nextInt();
 			 perfil.setMeta(meta);	
 		break; 
+		case 3:
+			 perfil.setMeta(peso);
+		break;
 		}
-
+		System.out.println("\nMeta definida!!!");
 		///////////////////////////////////////////////////
 		
 		espaco.PulaLinhas();
@@ -155,10 +155,6 @@ public class Teste {
 		Thread.sleep(2000);
 		
 		System.out.println("\nTodos seus dados foram analisados!!!");
-
-		System.out.println("\n\t\tTenha um ótimo trino!!!");
-		Thread.sleep(3000);
-		espaco.PulaLinhas();
 		
 		/////////////////// fim da apresentação//////////////////	
 
