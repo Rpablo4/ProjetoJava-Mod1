@@ -13,9 +13,8 @@ public class Teste {
 		float altura=0;
 		float imc=0;
 		int op=0;
-		
 		//////////////////////////////////////////////
-		
+		//************ Objetos **********//
 		PulaLinhas espaco = new PulaLinhas();
 		Bracos bracos = new Bracos();
 		Pernas pernas = new Pernas();
@@ -51,13 +50,13 @@ public class Teste {
 		
 		//Primeiros dado
 	
-		System.out.println("Carregando. ");
+		System.out.print("Carregando. ");
 		Thread.sleep(1000);
-		System.out.println("Carregando.. ");
+		System.out.print(". ");
 		Thread.sleep(1000);
-		System.out.println("Carregando... ");
+		System.out.print(". ");
 		Thread.sleep(1000);
-		System.out.print("\nCarregamento completo!!!\n");
+		System.out.println("\nCarregamento completo!!!\n");
 		Thread.sleep(2000);
 		
 		System.out.println("\nAntes de começarmos nossos treinamentos precisamos de algumas informações: ");
@@ -69,11 +68,11 @@ public class Teste {
 		perfil.setIdade(idade);
 		Thread.sleep(1000);
 		
-		System.out.println("\nCarregando. ");
+		System.out.print("\nCarregando.");
 		Thread.sleep(1000);
-		System.out.println("Carregando.. ");
+		System.out.print(".");
 		Thread.sleep(1000);
-		System.out.println("Carregando... ");
+		System.out.print(".");
 		Thread.sleep(1000);
 		System.out.print("\nCarregamento completo!!!\n");
 		Thread.sleep(2000);
@@ -90,13 +89,16 @@ public class Teste {
 		System.out.println("\nSeu Peso: ");
 		peso = input.nextFloat();
 		perfil.setPeso(peso);
+		System.out.println("\nQual a sua meta em Kg: ");
+		meta = input.nextFloat();
+		perfil.setMeta(meta);
 		System.out.print("Calculando seu IMC...\n");
 		Thread.sleep(1000);
-		System.out.println("Carregando. ");
+		System.out.print("Carregando.");
 		Thread.sleep(1000);
-		System.out.println("Carregando.. ");
+		System.out.print(".");
 		Thread.sleep(1000);
-		System.out.println("Carregando... ");
+		System.out.print(".");
 		Thread.sleep(1000);
 		System.out.println("\nCarregamento completo!!!\n");
 		Thread.sleep(2000);
@@ -117,22 +119,20 @@ public class Teste {
 		switch(op) {
 		
 		case 1:
-			 System.out.println("\nQual peso(kg) você deseja alcansar");
+			 System.out.println("\nQual peso(kg) você deseja alcansar: ");
 			 meta = input.nextInt();
 			 perfil.setMeta(meta);	 
 		break;	
 		case 2:
-			 System.out.println("\nQual peso(kg) você deseja alcansar");
+			 System.out.println("\nQual peso(kg) você deseja alcansar: ");
 			 meta = input.nextInt();
 			 perfil.setMeta(meta);	
 		break;
-		case 3:
-			System.out.println("\nPor favor qual seu peso atual");
-		break;
+
 		}
 		///////////////////////////////////////////////////
 		
-		System.out.println("\nQual a sua meta: ");
+		System.out.println("\nQual a meta você deseja alcançar em (Kg): ");
 	
 		
 		espaco.PulaLinhas();
@@ -144,21 +144,21 @@ public class Teste {
 		
 		System.out.println("\nAnalisando seus dados... ");
 		Thread.sleep(1000);
-		System.out.println("Carregando. ");
+		System.out.print("Carregando.");
 		Thread.sleep(1000);
-		System.out.println("Carregando.. ");
+		System.out.print(".");
 		Thread.sleep(1000);
-		System.out.println("Carregando...");
+		System.out.print(".");
 		Thread.sleep(1000);
 		System.out.println("\nCarregamento completo!!!\n");
 		Thread.sleep(2000);
 		
 		System.out.println("\nTodos seus dados foram analisados!!!");
 		System.out.println("\n\t\tTenha um ótimo trino!!!");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		espaco.PulaLinhas();
 		
-/////////////////// fim da apresentação//////////////////	
+		/////////////////// fim da apresentação//////////////////	
 
 		do {
 
@@ -193,36 +193,48 @@ public class Teste {
 					 nome = input.next();
 					 perfil.setNome(nome); 
 					 System.out.println("\nDados atualizados");
+					 Thread.sleep(2000);
+					 espaco.PulaLinhas();
 					 
 				break;	
 				case 2:
 					 System.out.println("\nInforme sua idade atual : ");
 					 idade = input.nextInt();
 					 perfil.setIdade(idade);
-					 
+					 System.out.println("\nDados atualizados");
+					 Thread.sleep(2000);
+					 espaco.PulaLinhas();
 				break;
 				case 3:
 					 System.out.println("\nInforme seu peso atual :");
 					 peso = input.nextFloat();
 					 perfil.setPeso(peso);
-					 if(meta < peso) {
+					 if(meta > peso) {
 						 System.out.println("\nO sucesso vem para aqueles que não se "
 						 		+ "impoêm limitese nunca perdem de vista suas metas continue firme!!!");
 					 }
-					 else if(meta > peso) {
+					 else if(meta < peso) {
 						 System.out.println("\nParabéns guerreiro não tire os olhos dos seus objetivos");
 						 
 					 }
-					espaco.PulaLinhas();
+					 System.out.println("\nDados atualizados");
 				break;
 				case 4:
 					 System.out.println("\nInforme sua nova meta :");
 					 meta = input.nextFloat();
 					 perfil.setMeta(meta);
-					 
+					 Thread.sleep(2000);
+					 espaco.PulaLinhas();
 				break;
 				default:
-					
+					System.out.print("Saindo.");
+					Thread.sleep(1000);
+					System.out.print(".");
+					Thread.sleep(1000);
+					System.out.print(".");
+					Thread.sleep(1000);
+					espaco.PulaLinhas();
+
 				break;
 				
 				}
