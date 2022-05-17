@@ -27,6 +27,8 @@ public class Teste {
 		EscolhaAgrupamento agrupamento = new EscolhaAgrupamento();
 		Dicas dicas = new Dicas();
 		Scanner input = new Scanner(System.in);
+		Manual manual = new Manual();
+		SobreNos sobre = new SobreNos();
 		
 
 		Usuarios perfil = new Usuarios("user", 0, 0, 0, 0, 0);
@@ -153,11 +155,7 @@ public class Teste {
 		Thread.sleep(1000);
 		System.out.println("\nCarregamento completo!!!\n");
 		Thread.sleep(2000);
-		
 		System.out.println("\nTodos seus dados foram analisados!!!");
-		
-		/////////////////// fim da apresentação//////////////////	
-
 		System.out.println("\n\t\tTenha um ótimo treino!!!");
 		Thread.sleep(2000);
 		espaco.PulaLinhas();
@@ -216,7 +214,7 @@ public class Teste {
 					 perfil.setPeso(peso);
 					 if(meta > peso) {
 						 System.out.println("\nO sucesso vem para aqueles que não se "
-						 		+ "impoêm limitese nunca perdem de vista suas metas continue firme!!!");
+						 		+ "impoêm limites e nunca perdem de vista suas meta. Continue firme!!!");
 					 }
 					 else if(meta < peso) {
 						 System.out.println("\nParabéns guerreiro não tire os olhos dos seus objetivos");
@@ -418,18 +416,21 @@ public class Teste {
 			case 3: // Dicas
 				
 				// Link de video
+				dicas.Dicas();
 				
 				break;
 
 			case 4: // Manual do app
 				
 				// String explicando o que tem em cada parte do app
+				manual.manualUser();
 				
 				break;
 
 			case 5: // Sobre nós
 				
 				// Info dos DEVS (GITHUB, Linkedin, nome, idade, cidade)
+				sobre.sobreNos();
 				break;
 
 			default:
