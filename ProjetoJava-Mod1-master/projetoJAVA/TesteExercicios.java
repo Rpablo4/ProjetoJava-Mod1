@@ -1,5 +1,6 @@
 package projetoJAVA;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TesteExercicios {
@@ -7,75 +8,154 @@ public class TesteExercicios {
 	public static void main(String[] args) {
 			
 		Scanner input = new Scanner(System.in);
+		int nivel,dia=0,op,opMenu;
 		
-		// Adicionando exercícios exercicio(nome, reps, series, comoFazer, tempoemsec)
-		exercicios abdominalSupra = new exercicios("Abdominal supra", 25, 2,"inserirLinkAqui", 0);
-		exercicios flexaoDeBraco = new exercicios("Flexão de Braço", 12, 2,"inserirLinkAqui", 0);
-		exercicios agachamentoSumo = new exercicios("Agachamento Sumô", 15, 2,"inserirLinkAqui", 0);
-		exercicios ponte = new exercicios("Ponte", 0, 0,"inserirLinkAqui", 30);
-		exercicios agachamentoCadeira = new exercicios("Agachamento livre na cadeira", 12, 2,"inserirLinkAqui", 0);
-		exercicios tricepsBanco = new exercicios("Triceps no banco", 12, 2,"inserirLinkAqui", 30);
-		exercicios corridaEstacionaria = new exercicios("corridaEstacionaria", 30, 2,"inserirLinkAqui", 0);
-		exercicios oGato = new exercicios("Mobilidade toraxica O Gato", 0, 0,"inserirLinkAqui", 30);
-		exercicios agachamentoIsometrico = new exercicios("Agachamento isometrico na parede", 0, 0,"inserirLinkAqui", 30);
-		exercicios agachamentoSalto = new exercicios("Agachamento com salto", 15, 2,"inserirLinkAqui", 0);
-		exercicios stiffUnilateral = new exercicios("stiffUnilateral", 15, 2,"inserirLinkAqui", 0);
-		exercicios escalador = new exercicios("Escalador", 25, 2,"inserirLinkAqui", 0);
-		exercicios abdominalRemador = new exercicios("Abdominal Remador", 20, 2,"inserirLinkAqui", 0);
-		exercicios polichinelos = new exercicios("Polichinelos", 40, 1,"inserirLinkAqui", 0);
-		exercicios elevacaoPes = new exercicios("Elevacao na ponta dos pés", 12, 3,"inserirLinkAqui", 0);
-		exercicios pulaCordas = new exercicios("Pula Cordas", 20, 2,"inserirLinkAqui", 0);
-		exercicios abdominalBicicleta = new exercicios("Abdominal Bicicleta", 15, 2,"inserirLinkAqui", 0);
+		ArrayList<exercicios> listaExercicios = new ArrayList<>();
+		
+		// criando exercícios exercicio(nome, reps, series, comoFazer, tempoemsec)
+		exercicios abdominalSupra = new exercicios("Abdominal supra", 0, 0,"inserirLinkAqui",0,0,1,1);
+		exercicios flexaoDeBraco = new exercicios("Flexão de Braço", 0, 0,"inserirLinkAqui", 0,1,1,1);
+		exercicios agachamentoSumo = new exercicios("Agachamento Sumô", 0, 0,"inserirLinkAqui", 0,1,0,1);
+		exercicios ponte = new exercicios("Ponte", 0, 0,"inserirLinkAqui", 0,0,1,1);
+		exercicios agachamentoCadeira = new exercicios("Agachamento livre na cadeira", 0, 0,"inserirLinkAqui", 0,0,1,1);
+		exercicios tricepsBanco = new exercicios("Triceps no banco", 0, 0,"inserirLinkAqui", 0,1,0,1);
+		exercicios corridaEstacionaria = new exercicios("corridaEstacionaria", 00, 0,"inserirLinkAqui", 0,0,1,0);
+		exercicios oGato = new exercicios("Mobilidade toraxica O Gato", 0, 0,"inserirLinkAqui", 00,0,1,0);
+		exercicios agachamentoIsometrico = new exercicios("Agachamento isometrico na parede", 0, 0,"inserirLinkAqui",00,0,1,0);
+		exercicios agachamentoSalto = new exercicios("Agachamento com salto", 0, 0,"inserirLinkAqui", 0,0,1,1);
+		exercicios stiffUnilateral = new exercicios("stiffUnilateral", 00, 0,"inserirLinkAqui", 0,1,0,1);
+		exercicios escalador = new exercicios("Escalador", 00, 0,"inserirLinkAqui", 0,0,1,0);
+		exercicios abdominalRemador = new exercicios("Abdominal Remador", 0, 0,"inserirLinkAqui", 0,0,1,1);
+		exercicios polichinelos = new exercicios("Polichinelos", 0, 0,"inserirLinkAqui", 0,0,1,0);
+		exercicios elevacaoPes = new exercicios("Elevacao na ponta dos pés", 0, 0,"inserirLinkAqui", 0,1,0,0);
+		exercicios pulaCordas = new exercicios("Pula Cordas", 0, 0,"inserirLinkAqui", 0,0,1,0);
+		exercicios abdominalBicicleta = new exercicios("Abdominal Bicicleta", 0, 0,"inserirLinkAqui", 0,0,1,0);
+		
+		//Adicionando exercicios no array
+		listaExercicios.add(abdominalSupra);
+		listaExercicios.add(flexaoDeBraco);
+		listaExercicios.add(agachamentoSumo);
+		listaExercicios.add(ponte);
+		listaExercicios.add(agachamentoCadeira);
+		listaExercicios.add(tricepsBanco);
+		listaExercicios.add(corridaEstacionaria);
+		listaExercicios.add(oGato);
+		listaExercicios.add(agachamentoIsometrico);
+		listaExercicios.add(agachamentoSalto);
+		listaExercicios.add(stiffUnilateral);
+		listaExercicios.add(escalador);
+		listaExercicios.add(abdominalRemador);
+		listaExercicios.add(polichinelos);
+		listaExercicios.add(elevacaoPes);
+		listaExercicios.add(pulaCordas);
+		listaExercicios.add(abdominalBicicleta);
 		
 		
-		int nivel,dia=0,op;
-			
+		System.out.println("\nEscolha uma jornada de acordo com sua meta:\n1-Ganhar massa magra/muscular\n"
+				+ "2-Perder peso\n3-Definir a musculatura\n ");
+		opMenu=input.nextInt();
+		
 		System.out.println("Bem vindo! Escolha o seu nível(1-Iniciante"
 				+ " 2-Intermediário 3-Avançado): ");
 		nivel=input.nextInt();
 		
 		switch(nivel) {
-			case 1:
-				break;
-							
-			case 2:
-				abdominalSupra.setRepsSeries(25,2);
-				flexaoDeBraco.setRepsSeries(25,2);
-				agachamentoSumo.setRepsSeries(25,2);
-				ponte.setRepsSeries(25,2);
-				break;
-				
-			case 3:
-				abdominalSupra.setRepsSeries(20,3);
-				flexaoDeBraco.setRepsSeries(20,3);
-				agachamentoSumo.setRepsSeries(20,3);
-				ponte.setRepsSeries(20,3);
-				break;
+		case 1:
+			for(int i=0; i<listaExercicios.size(); i++) {
+				listaExercicios.get(i).setRepsSeries(12, 2);
 			}
-		
-		// Inicia o cronograma de treinos
-		
-		for(dia=0;dia<30;dia++) {
-			System.out.println("\n\t\tDIA-"+dia+"\n\t\tLista de exercícios: ");
-			abdominalSupra.imprimirInfo();
-			flexaoDeBraco.imprimirInfo();
-			agachamentoSumo.imprimirInfo();
-			ponte.imprimirInfo();
-			System.out.println("\nDigite 1 para marcar o dia "+dia+
-					" como concluido ou qualquer outro numero para sair: ");
-			op=input.nextInt();
-			if(op==1) {
-				System.out.println("\nPárabens! Você concluiu o dia"+dia+"!!!");
-				abdominalSupra.aumentarRepsSeries(2,0);
-				flexaoDeBraco.aumentarRepsSeries(2,0);
-				agachamentoSumo.aumentarRepsSeries(2,0);
-				ponte.aumentarRepsSeries(2,0);
+			break;
+						
+		case 2:
+			for(int i=0; i<listaExercicios.size(); i++) {
+				listaExercicios.get(i).setRepsSeries(12, 3);
 			}
-			else
-				break;
+			break;
+			
+		case 3:
+			for(int i=0; i<listaExercicios.size(); i++) {
+				listaExercicios.get(i).setRepsSeries(20, 2);
+			}
+			break;
+		default:
+			break;
 		}
 		
+		switch(opMenu) {
+		case 1: //Ganhar massa magra/muscular
 			
+			
+			for(dia=0;dia<=30;dia++) {
+				System.out.println("\n\t\tDIA-"+dia+"\n\tFaça os exercícios a seguir:");
+				for(int i=0; i<listaExercicios.size(); i++) {
+					if(listaExercicios.get(i).getGanharMassa()==1) {
+						listaExercicios.get(i).imprimirInfo();
+					}
+				}
+				System.out.println("\nDigite 1 se você concluiu os exercicios de hoje \nou Digite 0 para sair:");
+				op=input.nextInt();
+				if(op==1)
+					System.out.println("\n\nParabéns, você concluiu o dia "+dia);
+				else
+					break;
+				if((dia%2)==0) {
+					for(int i=0; i<listaExercicios.size(); i++) {
+						listaExercicios.get(i).aumentarRepsSeries(3, 0);
+					}
+				}
+					
+			}
+			break;
+			
+		case 2: //Perder peso
+			for(dia=0;dia<=30;dia++) {
+				System.out.println("\n\t\tDIA-"+dia+"\n\tFaça os exercícios a seguir:");
+				for(int i=0; i<listaExercicios.size(); i++) {
+					if(listaExercicios.get(i).getQueimarGordura()==1) {
+						listaExercicios.get(i).imprimirInfo();
+					}
+				}
+				System.out.println("\nDigite 1 se você concluiu os exercicios de hoje \nou Digite 0 para sair:");
+				op=input.nextInt();
+				if(op==1)
+					System.out.println("\n\nParabéns, você concluiu o dia "+dia);
+				else
+					break;
+				if((dia%2)==0) {
+					for(int i=0; i<listaExercicios.size(); i++) {
+						listaExercicios.get(i).aumentarRepsSeries(3, 0);
+					}
+				}
+					
+			}
+			break;
+		case 3:
+			for(dia=0;dia<=30;dia++) {
+				System.out.println("\n\t\tDIA-"+dia+"\n\tFaça os exercícios a seguir:");
+				for(int i=0; i<listaExercicios.size(); i++) {
+					if(listaExercicios.get(i).getDefinirMusculatura()==1) {
+						listaExercicios.get(i).imprimirInfo();
+					}
+				}
+				System.out.println("\nDigite 1 se você concluiu os exercicios de hoje \nou Digite 0 para sair:");
+				op=input.nextInt();
+				if(op==1)
+					System.out.println("\n\nParabéns, você concluiu o dia "+dia);
+				else
+					break;
+				if((dia%2)==0) {
+					for(int i=0; i<listaExercicios.size(); i++) {
+						listaExercicios.get(i).aumentarRepsSeries(3, 0);
+					}
+				}
+					
+			}
+		}
+
 	}
 
 }
+
+   
+		
+

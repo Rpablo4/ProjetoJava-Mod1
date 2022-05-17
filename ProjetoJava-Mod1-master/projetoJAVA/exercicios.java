@@ -7,15 +7,22 @@ public class exercicios {
 	protected int series;
 	protected String comoFazer;
 	protected float tempoEmSegundos;
+	protected int ganharMassa;
+	protected int queimarGordura;
+	protected int definirMusculatura;
 	
 	//Metodo construtor
 	
-	public exercicios(String nomeDoExercicio, int reps, int series, String comoFazer,float tempo) {
+	public exercicios(String nomeDoExercicio, int reps, int series, String comoFazer, int tempo, int ganharMassa, int queimarGordura, int definirMusculatura)
+	{
 		this.nomeDoExercicio=nomeDoExercicio;
 		this.reps=reps;
 		this.series=series;
 		this.comoFazer=comoFazer;
 		this.tempoEmSegundos=tempo;
+		this.ganharMassa=ganharMassa;
+		this.queimarGordura=queimarGordura;
+		this.definirMusculatura=definirMusculatura;
 	}
 	
 	//Getters, Setters and metods 
@@ -60,6 +67,31 @@ public class exercicios {
 		this.reps= Reps;
 		this.series= Series;
 	}
+	
+	public int getGanharMassa() {
+		return ganharMassa;
+	}
+
+	public void setGanharMassa(int ganharMassa) {
+		this.ganharMassa = ganharMassa;
+	}
+
+	public int getQueimarGordura() {
+		return queimarGordura;
+	}
+
+	public void setQueimarGordura(int queimarGordura) {
+		this.queimarGordura = queimarGordura;
+	}
+
+	public int getDefinirMusculatura() {
+		return definirMusculatura;
+	}
+
+	public void setDefinirMusculatura(int definirMusculatura) {
+		this.definirMusculatura = definirMusculatura;
+	}
+
 	//Aumenta quantidade de repetições e séries do exercício.
 	public void aumentarRepsSeries(int incrementoReps, int incrementoSeries) {
 		this.reps= reps+incrementoReps;
