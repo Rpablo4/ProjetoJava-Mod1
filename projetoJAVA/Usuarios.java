@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Usuarios {
 	
 	protected String nome;
-	protected String meta;
+	protected float meta;
 	protected int idade;
 	protected float peso=0;
 	protected float altura=0;
 	protected float imc=0;
 	
-	public Usuarios(String nome,String meta, int idade, float peso, float altura, float imc) {
+	public Usuarios(String nome,float meta, int idade, float peso, float altura, float imc) {
 		this.nome = nome;
 		this.meta = meta;
 		this.idade = idade;
@@ -26,12 +26,12 @@ public class Usuarios {
 		int op=0;
 		Scanner input = new Scanner (System.in);
 		
-		System.out.println("\n Nome: "+getNome());
-		System.out.println("\n Idade: "+getIdade());
-		System.out.println("\n Altura: "+getAltura());
-		System.out.println("\n peso: "+getPeso());
-		System.out.println("\n Meta: "+getMeta());
-		System.out.println("\n Imc: "+getImc());
+		System.out.println("\n Nome: "+getNome()+";");
+		System.out.println("\n Idade: "+getIdade()+";");
+		System.out.println("\n Altura: "+getAltura()+";");
+		System.out.println("\n peso: "+getPeso()+"kg;");
+		System.out.println("\n Meta: "+getMeta()+"kg;");
+		System.out.println("\n Imc: "+getImc()+";");
 
 			
 		
@@ -45,11 +45,11 @@ public class Usuarios {
 		this.nome = nome;
 	}
 
-	public String getMeta() {
+	public float getMeta() {
 		return meta;
 	}
 
-	public void setMeta(String meta) {
+	public void setMeta(float meta) {
 		this.meta = meta;
 	}
 
