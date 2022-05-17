@@ -122,7 +122,7 @@ public class Teste {
 			 perfil.setMeta(meta);	 
 		break;	
 		case 2:
-			 System.out.println("\nQual peso(kg) você deseja alcansar");
+			 System.out.println("\nQual peso(kg) você deseja alcançar");
 			 meta = input.nextInt();
 			 perfil.setMeta(meta);	
 		break;
@@ -154,11 +154,11 @@ public class Teste {
 		Thread.sleep(2000);
 		
 		System.out.println("\nTodos seus dados foram analisados!!!");
-		System.out.println("\n\t\tTenha um ótimo trino!!!");
+		System.out.println("\n\t\tTenha um ótimo treino!!!");
 		Thread.sleep(2000);
 		espaco.PulaLinhas();
 		
-/////////////////// fim da apresentação//////////////////	
+/////////////////// fim da apresentação //////////////////	
 
 		do {
 
@@ -278,7 +278,7 @@ public class Teste {
 
 							case 3: // Treino de abdomem
 								espaco.PulaLinhas();
-								abdomem.exercicio("ABDOMEN");
+								abdomem.exercicio("ABDOMEM");
 								abdomem.quantidade(3, 10);
 								abdomem.tempo(10);
 								break;
