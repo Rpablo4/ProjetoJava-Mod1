@@ -15,6 +15,7 @@ public class Teste {
 		Dicas dicas = new Dicas();
 
 		Scanner input = new Scanner(System.in);
+		
 		Apresentacao apresentacao = new Apresentacao(); 
 		int opMenu, opSelecionada, opMenuPrincipal;
 		
@@ -25,7 +26,7 @@ public class Teste {
 
 		do {
 
-			System.out.println("\t\t-Menu Principal-" + "\n\n1 - Suas metas" + "\n2 - Tipos de treino" + "\n3 - Dicas"
+			System.out.println("\t\t-Menu Principal-" + "\n\n1 - Perfil do usuário" + "\n2 - Tipos de treino" + "\n3 - Dicas"
 					+ "\n4 - Manual do app" + "\n5 - Sobre nós"+"\n0 - Sair" + "\n\nDigite o número da opção desejada: ");
 
 			opMenuPrincipal = input.nextInt();
@@ -39,9 +40,9 @@ public class Teste {
 				
 				break;
 
-			case 1: // Metas
-				// Peso atual, meta de peso, mensagem motivacional, IMC puxado da parte do joao paz
-				//
+			case 1: 
+				 
+				
 
 				break;
 
