@@ -7,14 +7,14 @@ public class exercicios {
 		protected int reps;
 		protected int series;
 		protected String comoFazer;
-		protected float tempoEmSegundos;
+		protected String tempoEmSegundos;
 		protected int ganharMassa;
 		protected int queimarGordura;
 		protected int definirMusculatura;
 		
 		//Metodo construtor
 		
-		public exercicios(String nomeDoExercicio, int reps, int series, String comoFazer, int tempo, int ganharMassa, int queimarGordura, int definirMusculatura)
+		public exercicios(String nomeDoExercicio, int reps, int series, String comoFazer, String tempo, int ganharMassa, int queimarGordura, int definirMusculatura)
 		{
 			this.nomeDoExercicio=nomeDoExercicio;
 			this.reps=reps;
@@ -32,7 +32,7 @@ public class exercicios {
 					+"\nNúmero de repetições: "+getReps()+
 					"\nNúmero de séries: "+getSeries()+
 					"\ncomoFazer: "+getComoFazer()+
-					"\nPor quanto tempo: "+getTempoEmSegundos()+"s");
+					"\nPor quanto tempo: "+getTempoEmSegundos());
 		}
 		public String getNomeDoExercicio() {
 			return nomeDoExercicio;
@@ -58,10 +58,10 @@ public class exercicios {
 		public void setComoFazer(String comoFazer) {
 			this.comoFazer = comoFazer;
 		}
-		public float getTempoEmSegundos() {
+		public  String getTempoEmSegundos() {
 			return tempoEmSegundos;
 		}
-		public void setTempoEmSegundos(float tempo) {
+		public void setTempoEmSegundos(String tempo) {
 			this.tempoEmSegundos = tempo;
 		}
 		public void setRepsSeries(int Reps, int Series) {

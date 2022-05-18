@@ -110,6 +110,13 @@ public class Teste {
 		perfil.setImc(imc);
 	
 		System.out.printf("\nSeu IMC é: %.2f\n",imc);
+		if(imc>24.9) {
+			System.out.println("\nAcima do peso. Recomendamos o treino para perder massa.");
+		} else if(imc<18.5) {
+			System.out.println("Abaixo do peso. Recomendamos o treino para ganhar massa.");
+		} else {
+			System.out.println("Peso ideal, recomendamos o treino para definir o corpo");
+		}
 		Thread.sleep(3000);
 		///////switch para saber que meta o usuaria deseja//////
 		
@@ -257,34 +264,34 @@ public class Teste {
 
 							// criando exercícios exercicio(nome, reps, series, comoFazer, tempoemsec)
 
-							exercicios abdominalSupra = new exercicios("Abdominal supra", 0, 0, " https://youtu.be/t4PBYd481nk ", 0, 0, 1,
+							exercicios abdominalSupra = new exercicios("Abdominal supra", 0, 0, " https://youtu.be/t4PBYd481nk ", "Até concluir", 0, 1,
 									1);
-							exercicios flexaoDeBraco = new exercicios("Flexão de Braço", 0, 0, " https://youtu.be/lkvSelJ0tQ8", 0, 1, 1, 1);
-							exercicios agachamentoSumo = new exercicios("Agachamento Sumô", 0, 0, " https://youtu.be/XypoxVWr0zs ", 0, 1, 0,
+							exercicios flexaoDeBraco = new exercicios("Flexão de Braço", 0, 0, " https://youtu.be/lkvSelJ0tQ8", "até concluir", 1, 1, 1);
+							exercicios agachamentoSumo = new exercicios("Agachamento Sumô", 0, 0, " https://youtu.be/XypoxVWr0zs ", "Até concluir", 1, 0,
 									1);
-							exercicios ponte = new exercicios("Ponte", 0, 0, " https://youtu.be/7mcMQiy-MWQ ", 0, 0, 1, 1);
+							exercicios ponte = new exercicios("Ponte", 0, 0, " https://youtu.be/7mcMQiy-MWQ ", "30 seg", 0, 1, 1);
 							exercicios agachamentoCadeira = new exercicios("Agachamento livre na cadeira", 0, 0,
-									" https://youtu.be/5HgLKPl4Wx4 ", 0, 0, 1, 1);
-							exercicios tricepsBanco = new exercicios("Triceps no banco", 0, 0, " https://youtu.be/GM21qkns-Ao  ", 0, 1, 0,
+									" https://youtu.be/5HgLKPl4Wx4 ", "Até concluir", 0, 1, 1);
+							exercicios tricepsBanco = new exercicios("Triceps no banco", 0, 0, " https://youtu.be/GM21qkns-Ao  ", "Até concluir", 1, 0,
 									1);
 							exercicios corridaEstacionaria = new exercicios("corridaEstacionaria", 00, 0, " https://youtu.be/pvLUTrZFvi4 ",
-									0, 0, 1, 0);
-							exercicios oGato = new exercicios("Mobilidade toraxica O Gato", 0, 0, " https://youtu.be/comObBAaUjc  ", 00, 0,
+									"Até concluir", 0, 1, 0);
+							exercicios oGato = new exercicios("Mobilidade toraxica O Gato", 0, 0, " https://youtu.be/comObBAaUjc  ", "Até concluir", 0,
 									1, 0);
 							exercicios agachamentoIsometrico = new exercicios("Agachamento isometrico na parede", 0, 0,
-									" https://youtu.be/p1KsWs_SNjg ", 00, 0, 1, 0);
-							exercicios agachamentoSalto = new exercicios("Agachamento com salto", 0, 0, " https://youtu.be/p6miSld2sGs ", 0,
+									" https://youtu.be/p1KsWs_SNjg ", "Até concluir", 0, 1, 0);
+							exercicios agachamentoSalto = new exercicios("Agachamento com salto", 0, 0, " https://youtu.be/p6miSld2sGs ", "Até concluir",
 									0, 1, 1);
-							exercicios stiffUnilateral = new exercicios("stiffUnilateral", 00, 0, " https://youtu.be/2l5cKMBRUU4 ", 0, 1, 0,
+							exercicios stiffUnilateral = new exercicios("stiffUnilateral", 00, 0, " https://youtu.be/2l5cKMBRUU4 ", "Até concluir", 1, 0,
 									1);
-							exercicios escalador = new exercicios("Escalador", 00, 0, " https://youtu.be/Eni-G2H-WUA ", 0, 0, 1, 0);
-							exercicios abdominalRemador = new exercicios("Abdominal Remador", 0, 0, " https://youtu.be/xvS-hw6dEGI ", 0, 0,
+							exercicios escalador = new exercicios("Escalador", 00, 0, " https://youtu.be/Eni-G2H-WUA ", "Até concluir", 0, 1, 0);
+							exercicios abdominalRemador = new exercicios("Abdominal Remador", 0, 0, " https://youtu.be/xvS-hw6dEGI ", "Até concluir", 0,
 									1, 1);
-							exercicios polichinelos = new exercicios("Polichinelos", 0, 0, " https://youtu.be/dJFfySv3tUg ", 0, 0, 1, 0);
-							exercicios elevacaoPes = new exercicios("Elevacao na ponta dos pés", 0, 0, " https://youtu.be/huMhUr8Qycs ", 0,
+							exercicios polichinelos = new exercicios("Polichinelos", 0, 0, " https://youtu.be/dJFfySv3tUg ", "Até concluir", 0, 1, 0);
+							exercicios elevacaoPes = new exercicios("Elevacao na ponta dos pés", 0, 0, " https://youtu.be/huMhUr8Qycs ", "Até concluir",
 									1, 0, 0);
-							exercicios pulaCordas = new exercicios("Pula Cordas", 0, 0, " https://youtu.be/IcstXRKX2_Y ", 0, 0, 1, 0);
-							exercicios abdominalBicicleta = new exercicios("Abdominal Bicicleta", 0, 0, " https://youtu.be/E07kQpNXTNA ", 0,
+							exercicios pulaCordas = new exercicios("Pula Cordas", 0, 0, " https://youtu.be/IcstXRKX2_Y ", "Até concluir", 0, 1, 0);
+							exercicios abdominalBicicleta = new exercicios("Abdominal Bicicleta", 0, 0, " https://youtu.be/E07kQpNXTNA ", "Até concluir",
 									0, 1, 0);
 
 							// Adicionando exercicios no array
