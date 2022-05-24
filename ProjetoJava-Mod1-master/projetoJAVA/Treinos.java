@@ -1,4 +1,4 @@
-package projetoJAVA;
+/*package projetoJAVA;
 
 public abstract class Treinos {
 	private String tipoTreino;
@@ -17,4 +17,4 @@ public abstract class Treinos {
 		this.tipoTreino = tipoTreino;
 	}
 	
-}
+}*/

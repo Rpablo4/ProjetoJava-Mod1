@@ -6,14 +6,14 @@ public class exercicios {
 	protected int reps;
 	protected int series;
 	protected String comoFazer;
-	protected float tempoEmSegundos;
-	protected int ganharMassa;
-	protected int queimarGordura;
-	protected int definirMusculatura;
+	protected String tempoEmSegundos;
+	protected boolean ganharMassa;
+	protected boolean queimarGordura;
+	protected boolean definirMusculatura;
 	
 	//Metodo construtor
 	
-	public exercicios(String nomeDoExercicio, int reps, int series, String comoFazer, int tempo, int ganharMassa, int queimarGordura, int definirMusculatura)
+	public exercicios(String nomeDoExercicio, int reps, int series, String comoFazer, String tempo, boolean ganharMassa, boolean queimarGordura, boolean definirMusculatura)
 	{
 		this.nomeDoExercicio=nomeDoExercicio;
 		this.reps=reps;
@@ -57,10 +57,10 @@ public class exercicios {
 	public void setComoFazer(String comoFazer) {
 		this.comoFazer = comoFazer;
 	}
-	public float getTempoEmSegundos() {
+	public String getTempoEmSegundos() {
 		return tempoEmSegundos;
 	}
-	public void setTempoEmSegundos(float tempo) {
+	public void setTempoEmSegundos(String tempo) {
 		this.tempoEmSegundos = tempo;
 	}
 	public void setRepsSeries(int Reps, int Series) {
@@ -68,27 +68,27 @@ public class exercicios {
 		this.series= Series;
 	}
 	
-	public int getGanharMassa() {
+	public boolean getGanharMassa() {
 		return ganharMassa;
 	}
 
-	public void setGanharMassa(int ganharMassa) {
+	public void setGanharMassa(boolean ganharMassa) {
 		this.ganharMassa = ganharMassa;
 	}
 
-	public int getQueimarGordura() {
+	public boolean getQueimarGordura() {
 		return queimarGordura;
 	}
 
-	public void setQueimarGordura(int queimarGordura) {
+	public void setQueimarGordura(boolean queimarGordura) {
 		this.queimarGordura = queimarGordura;
 	}
 
-	public int getDefinirMusculatura() {
+	public boolean getDefinirMusculatura() {
 		return definirMusculatura;
 	}
 
-	public void setDefinirMusculatura(int definirMusculatura) {
+	public void setDefinirMusculatura(boolean definirMusculatura) {
 		this.definirMusculatura = definirMusculatura;
 	}
 
@@ -97,6 +97,10 @@ public class exercicios {
 		this.reps= reps+incrementoReps;
 		this.series= series+incrementoSeries;
 	}
+	public void aumentarTempo(int tempo) {
+		this.tempoEmSegundos= this.tempoEmSegundos + tempo + "s";
+	}
+
 
 	
 }
