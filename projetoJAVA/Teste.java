@@ -20,11 +20,6 @@ public class Teste {
 		//////////////////////////////////////////////
 		//************ Objetos **********//
 		PulaLinhas espaco = new PulaLinhas();
-		Bracos bracos = new Bracos();
-		Pernas pernas = new Pernas();
-		Abdomem abdomem = new Abdomem();
-		Peitoral peitoral = new Peitoral();
-		EscolhaAgrupamento agrupamento = new EscolhaAgrupamento();
 		Dicas dicas = new Dicas();
 		Scanner input = new Scanner(System.in);
 		Manual manual = new Manual();
