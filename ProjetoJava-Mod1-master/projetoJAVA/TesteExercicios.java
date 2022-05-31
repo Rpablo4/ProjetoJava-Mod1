@@ -1,6 +1,6 @@
 package projetoJAVA;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -96,21 +96,15 @@ public class TesteExercicios {
 		
 		switch(nivel) {
 		case 1:
-			for(int i=0; i<listaExercicios.size(); i++) {
-				listaExercicios.get(i).setRepsSeries(12, 2);
-			}
+			listaExercicios.forEach(ex -> ex.setRepsSeries(12, 2));
 			break;
 						
 		case 2:
-			for(int i=0; i<listaExercicios.size(); i++) {
-				listaExercicios.get(i).setRepsSeries(12, 3);
-			}
+			listaExercicios.forEach(ex -> ex.setRepsSeries(12, 3));
 			break;
 			
 		case 3:
-			for(int i=0; i<listaExercicios.size(); i++) {
-				listaExercicios.get(i).setRepsSeries(20, 2);
-			}
+			listaExercicios.forEach(ex -> ex.setRepsSeries(15, 3));
 			break;
 		default:
 			break;
